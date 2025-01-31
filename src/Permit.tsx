@@ -1,6 +1,6 @@
 import { useForm, FormProvider } from "react-hook-form";
 import { z } from "zod";
-import axios from 'axios'; // Import axios for making HTTP requests
+import axios from 'axios'; 
 
 import BusinessDetails from "./components/BusinessDetails";
 import BusinessOwner from "./components/BusinessOwner";
@@ -51,14 +51,14 @@ const Permit = () => {
 
   const onSubmit = async (data) => {
     try {
-      // Send form data to the backend API
+
       const response = await axios.post('http://localhost:8080/api/permits', data);
 
-      // Handle successful submission
+
       console.log("Response from backend:", response.data);
       alert("Permit created and email sent successfully!");
     } catch (error) {
-      // Handle error
+
       console.error("Error submitting the form:", error);
       alert("There was an error submitting the form.");
     }
