@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(14, 36, 87);
+}
+h1 {
+  color: white;
+  text-align: center
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  color: white;
+  margin-top: 1rem;
+}
+.output {
+  margin-top: 1rem;
+  text-align:center;
+  color:white
+}
